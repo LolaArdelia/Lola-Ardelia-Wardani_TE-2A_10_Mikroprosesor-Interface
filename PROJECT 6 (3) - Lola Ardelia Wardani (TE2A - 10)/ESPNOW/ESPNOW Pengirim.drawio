@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="Halaman-1" id="npIskKt61udWRYy6B-yX">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-76" value="Inisialisasi alamat MAC penerima dan pesan" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="314" y="147" width="222" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-77" value="Serial.begin 9600 dan WiFi.mode WIFI_STA" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="318" y="263" width="214" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-78" value="Inisialisasi ESP-NOW" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="323" y="379" width="203" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-79" value="Apakah inisialisasi ESP-NOW berhasil?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="291" y="478" width="267" height="267" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-80" value="Serial.println Gagal menginisialisasi ESP-NOW" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="170" y="818" width="242" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-82" value="Registrasi callback onDataSent" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="462" y="818" width="193" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-83" value="Tambahkan perangkat penerima dengan alamat MAC" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="439" y="934" width="239" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-84" value="Loop: Konversi pesan ke byte array" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="439" y="1068" width="239" height="239" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-85" value="Kirim data ke alamat MAC" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="357" y="1357" width="245" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-86" value="Tampilkan status pengiriman: Berhasil atau Gagal" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="358" y="1455" width="245" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-87" value="Serial.println Pesan terkirim" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1589" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-88" value="Tunggu 2 detik" style="whiteSpace=wrap;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="476" y="1705" width="165" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-89" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" target="bIhJonNO-m6nzy5z6dxT-76">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="425" y="97" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-90" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-76" target="bIhJonNO-m6nzy5z6dxT-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-91" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-77" target="bIhJonNO-m6nzy5z6dxT-78">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-92" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-78" target="bIhJonNO-m6nzy5z6dxT-79">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-93" value="Tidak" style="curved=1;startArrow=none;endArrow=block;exitX=0.11;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-79" target="bIhJonNO-m6nzy5z6dxT-80">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="291" y="781" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-94" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;entryDx=0;entryDy=0;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-80" target="bIhJonNO-m6nzy5z6dxT-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="291" y="952" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-95" value="Ya" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-79" target="bIhJonNO-m6nzy5z6dxT-82">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="781" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-96" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-82" target="bIhJonNO-m6nzy5z6dxT-83">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-97" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-83" target="bIhJonNO-m6nzy5z6dxT-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-98" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.23;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-84" target="bIhJonNO-m6nzy5z6dxT-85">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="1332" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-99" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-85" target="bIhJonNO-m6nzy5z6dxT-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-100" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-86" target="bIhJonNO-m6nzy5z6dxT-87">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-101" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.27;entryY=0.01;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-87" target="bIhJonNO-m6nzy5z6dxT-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="1680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-102" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.74;exitY=0.01;entryX=0.77;entryY=1;rounded=0;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="bIhJonNO-m6nzy5z6dxT-88" target="bIhJonNO-m6nzy5z6dxT-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="638" y="1680" />
+              <mxPoint x="638" y="1332" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-103" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Akhir&lt;/span&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="249" y="958" width="84" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bIhJonNO-m6nzy5z6dxT-105" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Mulai&lt;/span&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="379.5" y="30" width="90" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
